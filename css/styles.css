@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+    background-color: red;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    background-color: blue;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+    background-color: yellow;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    /* reglas */
+    .column-3 {
+        width: 100%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+}
